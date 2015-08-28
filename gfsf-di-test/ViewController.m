@@ -7,8 +7,12 @@
 //
 
 #import "ViewController.h"
+#import "DIRepository.h"
 
 @interface ViewController ()
+@property (weak, nonatomic) IBOutlet UILabel *oneLabel;
+@property (weak, nonatomic) IBOutlet UILabel *twoLabel;
+@property (strong, nonatomic) DIRepository *diRepository;
 
 @end
 
@@ -17,6 +21,11 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
+    
+    self.diRepository = [DIRepository new];
+    
+//    self.oneLabel.text = self.diRepository.diClient.diOne;
+    self.twoLabel.text = self.diRepository.diClient.diOne;
 }
 
 - (void)didReceiveMemoryWarning {

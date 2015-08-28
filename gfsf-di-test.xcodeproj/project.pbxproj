@@ -14,6 +14,10 @@
 		8BDF33A61B90E531002642DD /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8BDF33A51B90E531002642DD /* Images.xcassets */; };
 		8BDF33A91B90E531002642DD /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8BDF33A71B90E531002642DD /* LaunchScreen.xib */; };
 		8BDF33B51B90E531002642DD /* gfsf_di_testTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BDF33B41B90E531002642DD /* gfsf_di_testTests.m */; };
+		8BDF33C01B90E63A002642DD /* DIClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BDF33BF1B90E63A002642DD /* DIClient.m */; };
+		8BE8B49D1B90EA3B00093893 /* DIRepository.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BE8B49C1B90EA3B00093893 /* DIRepository.m */; };
+		8BE8B4A01B90EB9E00093893 /* CoreAssembly.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BE8B49F1B90EB9E00093893 /* CoreAssembly.m */; };
+		C1766A2783E18341D85D0198 /* libPods-gfsf-di-test.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 95DADB17334B1131E7EFA393 /* libPods-gfsf-di-test.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +44,15 @@
 		8BDF33AE1B90E531002642DD /* gfsf-di-testTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "gfsf-di-testTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8BDF33B31B90E531002642DD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8BDF33B41B90E531002642DD /* gfsf_di_testTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = gfsf_di_testTests.m; sourceTree = "<group>"; };
+		8BDF33BE1B90E63A002642DD /* DIClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DIClient.h; sourceTree = "<group>"; };
+		8BDF33BF1B90E63A002642DD /* DIClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DIClient.m; sourceTree = "<group>"; };
+		8BE8B49B1B90EA3B00093893 /* DIRepository.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DIRepository.h; sourceTree = "<group>"; };
+		8BE8B49C1B90EA3B00093893 /* DIRepository.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DIRepository.m; sourceTree = "<group>"; };
+		8BE8B49E1B90EB9E00093893 /* CoreAssembly.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CoreAssembly.h; sourceTree = "<group>"; };
+		8BE8B49F1B90EB9E00093893 /* CoreAssembly.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CoreAssembly.m; sourceTree = "<group>"; };
+		95DADB17334B1131E7EFA393 /* libPods-gfsf-di-test.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-gfsf-di-test.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		BF5109E08352C4E9C2EDC923 /* Pods-gfsf-di-test.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-gfsf-di-test.release.xcconfig"; path = "Pods/Target Support Files/Pods-gfsf-di-test/Pods-gfsf-di-test.release.xcconfig"; sourceTree = "<group>"; };
+		C2495CC6295E6BDA576FA059 /* Pods-gfsf-di-test.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-gfsf-di-test.debug.xcconfig"; path = "Pods/Target Support Files/Pods-gfsf-di-test/Pods-gfsf-di-test.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +60,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C1766A2783E18341D85D0198 /* libPods-gfsf-di-test.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -60,12 +74,31 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		397EC696253DCA433751058C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				95DADB17334B1131E7EFA393 /* libPods-gfsf-di-test.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		7096AC6593B6D64FBC6C4E09 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C2495CC6295E6BDA576FA059 /* Pods-gfsf-di-test.debug.xcconfig */,
+				BF5109E08352C4E9C2EDC923 /* Pods-gfsf-di-test.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		8BDF338C1B90E531002642DD = {
 			isa = PBXGroup;
 			children = (
 				8BDF33971B90E531002642DD /* gfsf-di-test */,
 				8BDF33B11B90E531002642DD /* gfsf-di-testTests */,
 				8BDF33961B90E531002642DD /* Products */,
+				7096AC6593B6D64FBC6C4E09 /* Pods */,
+				397EC696253DCA433751058C /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -89,6 +122,12 @@
 				8BDF33A51B90E531002642DD /* Images.xcassets */,
 				8BDF33A71B90E531002642DD /* LaunchScreen.xib */,
 				8BDF33981B90E531002642DD /* Supporting Files */,
+				8BDF33BE1B90E63A002642DD /* DIClient.h */,
+				8BDF33BF1B90E63A002642DD /* DIClient.m */,
+				8BE8B49B1B90EA3B00093893 /* DIRepository.h */,
+				8BE8B49C1B90EA3B00093893 /* DIRepository.m */,
+				8BE8B49E1B90EB9E00093893 /* CoreAssembly.h */,
+				8BE8B49F1B90EB9E00093893 /* CoreAssembly.m */,
 			);
 			path = "gfsf-di-test";
 			sourceTree = "<group>";
@@ -126,9 +165,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 8BDF33B81B90E532002642DD /* Build configuration list for PBXNativeTarget "gfsf-di-test" */;
 			buildPhases = (
+				201F3E6E82B9BC51AA06D6FB /* Check Pods Manifest.lock */,
 				8BDF33911B90E531002642DD /* Sources */,
 				8BDF33921B90E531002642DD /* Frameworks */,
 				8BDF33931B90E531002642DD /* Resources */,
+				18C479AC2D5B904044F7F62B /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -214,12 +255,48 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		18C479AC2D5B904044F7F62B /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-gfsf-di-test/Pods-gfsf-di-test-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		201F3E6E82B9BC51AA06D6FB /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		8BDF33911B90E531002642DD /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8BE8B4A01B90EB9E00093893 /* CoreAssembly.m in Sources */,
+				8BE8B49D1B90EA3B00093893 /* DIRepository.m in Sources */,
 				8BDF33A11B90E531002642DD /* ViewController.m in Sources */,
+				8BDF33C01B90E63A002642DD /* DIClient.m in Sources */,
 				8BDF339E1B90E531002642DD /* AppDelegate.m in Sources */,
 				8BDF339B1B90E531002642DD /* main.m in Sources */,
 			);
@@ -345,6 +422,7 @@
 		};
 		8BDF33B91B90E532002642DD /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C2495CC6295E6BDA576FA059 /* Pods-gfsf-di-test.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "gfsf-di-test/Info.plist";
@@ -355,6 +433,7 @@
 		};
 		8BDF33BA1B90E532002642DD /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BF5109E08352C4E9C2EDC923 /* Pods-gfsf-di-test.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "gfsf-di-test/Info.plist";
@@ -416,6 +495,7 @@
 				8BDF33BA1B90E532002642DD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		8BDF33BB1B90E532002642DD /* Build configuration list for PBXNativeTarget "gfsf-di-testTests" */ = {
 			isa = XCConfigurationList;
@@ -424,6 +504,7 @@
 				8BDF33BD1B90E532002642DD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
